@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;SingletonDM.getSheetsOfLevel().pcLevel&apos; in &apos;SingletonDM.getSheetsOfLevel()&apos; to field&#x0D;&#x0A;- Original project: &apos;SingletonDungeonMaster&apos;&#x0D;&#x0A;- Original element: &apos;SingletonDM.getSheetsOfLevel().pcLevel&apos;&#x0D;&#x0A;- Field name: &apos;pcLevel&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;pcLevel&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;{SingletonDM.java" name="pcLevel" selection="2290 14" stamp="1460220882549" static="false" version="1.0" visibility="2"/>
+</session>

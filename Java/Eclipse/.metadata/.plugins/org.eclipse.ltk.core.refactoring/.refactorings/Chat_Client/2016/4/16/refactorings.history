@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;chatClient.ClientFrame.writeUsers().token&apos; in &apos;chatClient.ClientFrame.writeUsers()&apos; to field&#x0D;&#x0A;- Original project: &apos;Chat_Client&apos;&#x0D;&#x0A;- Original element: &apos;chatClient.ClientFrame.writeUsers().token&apos;&#x0D;&#x0A;- Field name: &apos;token&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;token&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;chatClient{ClientFrame.java" name="token" selection="1154 19" stamp="1460405096676" static="false" version="1.0" visibility="2"/>
+</session>

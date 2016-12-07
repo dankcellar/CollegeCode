@@ -1,0 +1,13 @@
+	static int RecursiveChange( int total, int index )
+	{
+		if( total <= 0 ) return( 0 );
+		if( index >= Denominations.length ) return( 0 );
+		
+		int with = RecursiveChange( total - Denominations[index], index ) + 1;
+		int without = RecursiveChange( total, index + 1 );
+		
+		if( with == 0 ) return( without );
+		if( without == 0 ) return( with );
+		
+		return( Math.min( with,  without ) );
+	}

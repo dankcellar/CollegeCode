@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="D:\DownloadHDD\WorkWithHashes\WorkWithHashes"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="D:\DownloadHDD\TypingDistance.zip"/>
+			<item value="D:\DownloadHDD\TextJustification.zip"/>
+			<item value="D:\DownloadHDD\MCSS.zip"/>
+			<item value="D:\DownloadHDD\MakeUnique.zip"/>
+			<item value="D:\DownloadHDD\MakeCHange.zip"/>
+			<item value="D:\DownloadHDD\knapsack1.zip"/>
+			<item value="D:\DownloadHDD\EggDrop.zip"/>
+			<item value="D:\DownloadHDD\EditDistance.zip"/>
+			<item value="D:\DownloadHDD\DP4.zip"/>
+			<item value="D:\DownloadHDD\DP3.zip"/>
+			<item value="D:\DownloadHDD\DP2.zip"/>
+			<item value="D:\DownloadHDD\DP1.zip"/>
+			<item value="D:\DownloadHDD\SingletonDungeonMaster.zip"/>
+			<item value="D:\DownloadHDD\FacadePokemonCenter.zip"/>
+			<item value="D:\DownloadHDD\Connect4.zip"/>
+			<item value="D:\DownloadHDD\TileGame.zip"/>
+			<item value="D:\DownloadHDD\Sudoku.zip"/>
+			<item value="D:\DownloadHDD\Floodfill.zip"/>
+			<item value="D:\DownloadHDD\AStar.zip"/>
+			<item value="D:\DownloadHDD\DFSWithDataStructures (1).zip"/>
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item value="" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="579" key="DIALOG_HEIGHT"/>
+		<item value="218" key="DIALOG_X_ORIGIN"/>
+		<item value="134" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

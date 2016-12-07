@@ -1,0 +1,319 @@
+
+public class BST 
+{
+	// This is the m_objRootNode node, which starts off as null
+	//   when the BST is empty.
+	BSTNode m_objRootNode;
+	
+	// Class constructor.
+	public BST()
+	{
+		// Not really necessary, provided for clarity.
+		m_objRootNode = null;
+	}
+
+	// Method to see if the tree is empty.
+	public boolean IsEmpty()
+	{
+		// Return a boolean indicating whether the
+		//   three is empty or not.
+		return( m_objRootNode == null );
+	}
+
+	/* Functions to search for an element */
+    public BSTNode Search( int nKeyValue )
+    {
+        return( Search( m_objRootNode, nKeyValue ) );
+    }
+    
+    // Method to search for an element recursively.
+    private BSTNode Search( BSTNode objNode, int nKeyValue )
+    {
+    	
+    	if( objNode == null )
+    	{
+    		return( null );
+    	}
+    	
+    	// First, we get the key value for this node.
+    	int nThisKeyValue = objNode.GetKeyValue();
+            
+    	// See if the passed in key value is less. If so,
+    	//   this indicates that we need to go left.
+    	if( nKeyValue < nThisKeyValue )
+    	{
+    		// Get the left node object reference so we
+    		//   can walk down it.
+    		objNode = objNode.GetLeftNode();
+    	}
+            
+    	// See if the passed in key value is greater. If so,
+    	//   this indicates that we need to go right.
+    	else if( nKeyValue > nThisKeyValue )
+    	{
+    		// Get the right node object reference so we
+    		//   can walk down it.
+    		objNode = objNode.GetRightNode();
+    	}
+
+    	// Here we have found the node with the key
+    	//   value that was passed in.
+    	else
+    	{
+    		return( objNode );
+    	}
+            
+    	// Now call Search recursively.
+    	return( Search( objNode, nKeyValue ) );
+	}
+    
+    // This method inserts a node based on the key value.
+    public void Insert( int nKeyValue ) 
+    {
+    	// The root node is returned to m_objRootNode from Insert()
+    	BSTNode x, y;
+    	BSTNode objNode;
+    	objNode = Search(nKeyValue);
+        // root is a global variable and is the root of the tree
+    	x = y = m_objRootNode; // Assume root is initialized to null
+  
+    	while (x != null)
+    	{
+    		if (x.GetKeyValue() > nKeyValue)
+    		{
+    			y = x;
+    			x = x.GetLeftNode();
+    		}
+    		else
+    		{
+    			y = x;
+    			x = x.GetRightNode();
+    		}
+    	}
+  
+    	// y will be the parent of node
+    	if (y == null) 
+    	{
+    		m_objRootNode = objNode;
+    		return;
+    	}
+  
+    	if (y.GetKeyValue() > nKeyValue)
+    		y.SetLeftNode(objNode);
+    	else
+    		y.SetRightNode(objNode);
+  
+    	objNode.setParent(y);    }    
+
+    // Class protected (internal) method to insert nodes. This method
+    //   will be called recursively.
+    protected void Insert( int nKeyValue, BSTNode objNode ) 
+    {    	    	    	    	    	    	    	   
+    	BSTNode x, y;
+        // root is a global variable and is the root of the tree
+    	x = y = m_objRootNode; // Assume root is initialized to null
+  
+    	while (x != null)
+    	{
+    		if (x.GetKeyValue() > nKeyValue)
+    		{
+    			y = x;
+    			x = x.GetLeftNode();
+    		}
+    		else
+    		{
+    			y = x;
+    			x = x.GetRightNode();
+    		}
+    	}
+  
+    	// y will be the parent of node
+    	if (y == null) 
+    	{
+    		m_objRootNode = objNode;
+    		return;
+    	}
+  
+    	if (y.GetKeyValue() > nKeyValue)
+    		y.SetLeftNode(objNode);
+    	else
+    		y.SetRightNode(objNode);
+  
+    	objNode.setParent(y);
+    }
+    
+    // Functions to delete data 
+    public void Delete(int nValue)
+    {
+    	BSTNode ds;
+    	ds = Search(nValue);
+        // Case 1: ds does not have a child, just delete it
+        if (ds.GetLeftNode() == null && ds.GetRightNode() == null)
+        {
+            if (ds.getParent() != null && ds.getParent().GetLeftNode() == ds)
+                ds.SetLeftNode(null);
+            else if (ds.getParent() != null && ds.getParent().GetRightNode() == ds)
+                ds.SetRightNode(null);            
+        }
+        // Case 2: ds has only one child, splice the child with its parent
+        else if (ds.GetLeftNode() == null || ds.GetRightNode() == null)
+        {
+            if (ds.getParent() != null)
+            {
+            	BSTNode x = ds.GetLeftNode() == null ? ds.GetRightNode() : ds.GetLeftNode();
+                if (ds.getParent().GetLeftNode() == ds)
+                    ds.getParent().SetLeftNode(x);
+                else
+                    ds.getParent().SetRightNode(x);
+            }            
+        }
+        // Case 3: ds has both children, set the successor of the ds to its parent
+        else
+        {
+        	BSTNode x = findSuccessor(ds); // x will have at most one child
+            // Instead of deleting we can just copy the successor's data over to the ds to be deleted
+            ds.SetKeyValue(x.GetKeyValue());
+            // Now delete the successor and set its child (if any) to its parent
+            BSTNode nodeChild = x.GetLeftNode() == null ? x.GetRightNode() : x.GetLeftNode();
+            if (x.GetLeftNode() != null)
+            {
+                if (x.getParent().GetLeftNode() == x)
+                    x.getParent().SetLeftNode(nodeChild);
+                else
+                    x.getParent().SetRightNode(nodeChild);
+            }
+            else
+            {
+                if (x.getParent().GetLeftNode() == x)
+                    x.getParent().SetLeftNode(nodeChild);
+                else
+                    x.getParent().SetRightNode(nodeChild);
+            }
+        }
+    }
+   
+    // Functions to delete data 
+    public void Delete(BSTNode ds)
+    {
+        // Case 1: ds does not have a child, just delete it
+        if (ds.GetLeftNode() == null && ds.GetRightNode() == null)
+        {
+            if (ds.getParent() != null && ds.getParent().GetLeftNode() == ds)
+                ds.SetLeftNode(null);
+            else if (ds.getParent() != null && ds.getParent().GetRightNode() == ds)
+                ds.SetRightNode(null);            
+        }
+        // Case 2: ds has only one child, splice the child with its parent
+        else if (ds.GetLeftNode() == null || ds.GetRightNode() == null)
+        {
+            if (ds.getParent() != null)
+            {
+            	BSTNode x = ds.GetLeftNode() == null ? ds.GetRightNode() : ds.GetLeftNode();
+                if (ds.getParent().GetLeftNode() == ds)
+                    ds.getParent().SetLeftNode(x);
+                else
+                    ds.getParent().SetRightNode(x);
+            }            
+        }
+        // Case 3: ds has both children, set the successor of the ds to its parent
+        else
+        {
+        	BSTNode x = findSuccessor(ds); // x will have at most one child
+            // Instead of deleting we can just copy the successor's data over to the ds to be deleted
+            ds.SetKeyValue(x.GetKeyValue());
+            // Now delete the successor and set its child (if any) to its parent
+            BSTNode nodeChild = x.GetLeftNode() == null ? x.GetRightNode() : x.GetLeftNode();
+            if (x.GetLeftNode() != null)
+            {
+                if (x.getParent().GetLeftNode() == x)
+                    x.getParent().SetLeftNode(nodeChild);
+                else
+                    x.getParent().SetRightNode(nodeChild);
+            }
+            else
+            {
+                if (x.getParent().GetLeftNode() == x)
+                    x.getParent().SetLeftNode(nodeChild);
+                else
+                    x.getParent().SetRightNode(nodeChild);
+            }
+        }
+    }
+  
+    private static BSTNode findSuccessor(BSTNode node) {
+        if (node == null)
+            return null;
+        
+        if (node.GetRightNode() != null) {
+        	while (node != null) {
+        		node = node.GetRightNode();
+        	}
+            return node;
+        }
+       
+        BSTNode y = node.getParent();
+        BSTNode x = node;
+        while (y != null && x == y.GetRightNode())
+        {
+            x = y;
+            y = y.getParent();
+        }
+
+        return y;	}
+
+	// Find the root node
+    public BSTNode getRootNode() {
+        
+    	return m_objRootNode;
+    }
+
+    // Get the minimum value
+    public int getMin()
+    {
+    	
+    	if (m_objRootNode.GetLeftNode() == null) 
+            return m_objRootNode.GetKeyValue();
+    	 
+    	BSTNode tempNode = m_objRootNode;
+    	     
+        while (tempNode.GetLeftNode() != null) {
+        	tempNode = tempNode.GetLeftNode();
+        }
+        return tempNode.GetKeyValue();
+    }
+
+    // Get the maximum value
+    public int getMax()
+    {
+    	if (m_objRootNode.GetRightNode() == null) 
+            return m_objRootNode.GetKeyValue();
+    	 
+    	BSTNode tempNode = m_objRootNode;
+    	     
+        while (tempNode.GetRightNode() != null) {
+        	tempNode = tempNode.GetRightNode();
+        }
+        return tempNode.GetKeyValue();
+    }
+
+    public int getRank(BSTNode ds) 
+    {
+    	    	
+    	if (ds == null || ds.GetLeftNode() == null) 
+    		return 0;      	
+    	if (ds.GetKeyValue() < m_objRootNode.GetKeyValue())
+    		return getRank(ds.GetLeftNode());    	
+    	else if (ds.GetKeyValue() > m_objRootNode.GetKeyValue())
+    		return 1 + ds.GetLeftNode().getSubtreeSize() + getRank(ds.GetRightNode());    	
+    	else
+    		return ds.GetLeftNode().getSubtreeSize();    		    
+    }
+    
+    public int getRank(int nValue)
+    {
+    	BSTNode temp;
+    	temp = Search(nValue);
+    	return getRank(temp);
+    }
+
+}

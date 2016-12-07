@@ -1,0 +1,21 @@
+	static int IterativeChange( int total )
+	{
+		if( total <= 0 ) return( 0 );
+		
+		int[] CoinCounts = new int[total+1];
+		
+		for( int s=1; s<=total; s++ )
+		{
+			CoinCounts[s] = Integer.MAX_VALUE;
+			
+			for( int j=0; j<Denominations.length; j++ )
+			{
+				if( Denominations[j] <= s &&
+					CoinCounts[s-Denominations[j]] + 1 < CoinCounts[s] )
+				{
+					CoinCounts[s] = CoinCounts[s-Denominations[j]] + 1;
+				}
+			}
+		}
+		return( CoinCounts[total] );
+	}

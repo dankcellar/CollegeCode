@@ -1,0 +1,42 @@
+package knapsack1;
+
+public class knapsack1 
+{
+	
+	static int[] weights = { 2, 3, 4, 5 };
+	static int[] values = { 3, 4, 5, 6 };
+	static int maxweight = 5;
+	
+	static boolean[] used = new boolean[4];
+	
+	static int DoKnapsack( int index, int weight )
+	{
+		if( index < 0 ) return( 0 );
+		
+		if( weights[index] > weight ) return( DoKnapsack( index - 1, weight ) );
+
+		int one = DoKnapsack( index-1, weight );
+		int two = DoKnapsack( index-1, weight-weights[index])+values[index];
+		
+		if( one < two )
+		{
+			used[index] = true;
+		}
+		
+		return( Math.max( one, two ) );
+	}
+
+	public static void main(String[] args) 
+	{
+		System.out.println( DoKnapsack( values.length-1, maxweight ) );
+		
+		for( int i=0; i<used.length; i++ )
+		{
+			if( used[i] )
+			{
+				System.out.println( "Use weight:" + weights[i] + " with value:" + values[i] );
+			}
+		}
+	}
+
+}

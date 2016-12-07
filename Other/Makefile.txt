@@ -1,0 +1,4 @@
+obj-m += charDev.o
+
+all:
+	make -C /lib/modules/4.4.0-37-generic/build M=/home/eric/modtest modules
