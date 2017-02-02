@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AppTesting.iml" filepath="$PROJECT_DIR$/AppTesting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meidConverter.iml" filepath="$PROJECT_DIR$/meidConverter.iml" />
     </modules>
   </component>
 </project>
