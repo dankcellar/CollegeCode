@@ -9,10 +9,22 @@ public class Calc {
 
     public static void main(String[] args) {
 
+        System.out.println( "MEID Converter functions: \n" +
+                            "    1. Can convert DEC number to HEX IMEI --- given 18 digit DEC number\n" +
+                            "    2. Can find an IMEI's last check digit --- given 14 digit MEID\n" +
+                            "    3. Can check if IMEI was typed correctly --- given last digit in IMEI is known\n\n" +
+                            "*** Always verify the IMEI inside of the phone's settings ***\n\n");
+
+
         while (true) {
             System.out.print("Enter DEC or HEX number: ");
             Scanner input = new Scanner(System.in);
             String userInput = input.nextLine();
+
+            if (userInput.compareTo("sauce") == 0) {
+                dragon();
+                break;
+            }
 
             try {
                 MEIDtemp = new meidHelper(userInput);
@@ -26,9 +38,7 @@ public class Calc {
                 String imei = meidHex.concat(cN);
                 printOut(imei);
 
-            }
-
-            if (userInput.length() == 14 || userInput.length() == 15) {
+            } else if (userInput.length() == 14 || userInput.length() == 15) {
                 String imei;
                 if (userInput.length() == 14) {
                     meidHex = userInput;
@@ -39,10 +49,45 @@ public class Calc {
                 } else {
                     imei = userInput;
                 }
-
                 printOut(imei);
+
+            } else {
+                System.out.println("Not a valid number --- Please double check entry \n");
             }
         }
+    }
+
+    private static void dragon() {
+
+        System.out.println( "            ```                                                                 ````               \n" +
+                            "      `+hs::::///++++:.                                             `.-/++++//:::::yy/.`           \n" +
+                            "         `:+`       `-+ym/.                `. ``                     -sms:.`       -+.             \n" +
+                            "           `/`          .+ddo-              `:/:/`               `/ymy:`          ::               \n" +
+                            "             /            `/mMms:`            -mmNy/`         ./hNMh-            .:                \n" +
+                            "             :`             .dMMMmo.      `/ymMMMMMd/`    :yNMMMo              :`                  \n" +
+                            "             /  `.--::////:-.+MMMMy+-     +oyMMNsohdo-:o` `/odMMMm..:////::-.  --                  \n" +
+                            "           .o/::-.```..:oydmNMMMs  `    .`mMMy  ``o      `NMMMNmhs+:...``.-::-o/`                  \n" +
+                            "         ./o/:`            `sNMM:  .:.`` /MMN/`      `:`  hMMd+.`            .:+o-`                \n" +
+                            "             `--`             -dMh. `oNNmh+sMMM+`   -sdmNm.  :NMo`             .:.`                \n" +
+                            "               `--          ./osymmhymMMMN:-dNMMd+..oMMMMhydNhyo+:`         `.                     \n" +
+                            "                 `:`     `:.` .s+:/+sydNmmds+mMMNmmNmhyo+//s+  `.::.`     --                       \n" +
+                            "                  `/   .:-`    `/```````./mh.  .shMMMN/.``````.:     .--`  .:                      \n" +
+                            "                   .:`/:-....`/:.```  ```+.    ``mMMMy+` ````-o`....../: /                         \n" +
+                            "                    o+.`      `/`                 /mMM/-/`     .:`     ``:++                       \n" +
+                            "                    .                            `+MMN- `/-  --`          `.                       \n" +
+                            "                                              `+hMMm    :+:-//-`                                   \n" +
+                            "                                           ./ydNMmy/.     `-    `--`                               \n" +
+                            "                                     ``  `:oNMMh/`                 .`                              \n" +
+                            "                                  ./s. -:..NMN/`                   ``                              \n" +
+                            "                                .:. .:/.   :hNh+.`                   `                             \n" +
+                            "                               `:.     .      ./ymy`                                               \n" +
+                            "                              --                `ys                                                \n" +
+                            "                             `                os                                                   \n" +
+                            "                            .                 .y`                                                  \n" +
+                            "                                              shmy:                                                \n" +
+                            "                                               +d.                                                 \n" +
+                            "                                                                                                   \n " +
+                            "                                     Created by: Eric Downey \n");
     }
 
     public static int getIMEI(String meidHex, String[] str) {
@@ -96,6 +141,7 @@ public class Calc {
         System.out.println();
     }
 
+    /*
     public static boolean validate(String numberString) {
         return checkSum(numberString) == 0;
     }
@@ -128,6 +174,7 @@ public class Calc {
             return k;
         return sumToSingleDigit(k / 10) + (k % 10);
     }
+    */
 }
 
 
