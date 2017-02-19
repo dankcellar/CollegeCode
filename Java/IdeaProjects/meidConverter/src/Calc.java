@@ -1,5 +1,6 @@
 import java.awt.datatransfer.*;
 import java.awt.Toolkit;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Calc {
@@ -7,14 +8,13 @@ public class Calc {
     private static meidHelper MEIDtemp;
     private static String meidHex;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         System.out.println( "MEID Converter functions: \n" +
                             "    1. Can convert DEC number to HEX IMEI --- given 18 digit DEC number\n" +
                             "    2. Can find an IMEI's last check digit --- given 14 digit MEID\n" +
                             "    3. Can check if IMEI was typed correctly --- given last digit in IMEI is known\n\n" +
                             "*** Always verify the IMEI inside of the phone's settings ***\n\n");
-
 
         while (true) {
             System.out.print("Enter DEC or HEX number: ");
@@ -23,6 +23,7 @@ public class Calc {
 
             if (userInput.compareTo("sauce") == 0) {
                 dragon();
+                System.in.read();
                 break;
             }
 
