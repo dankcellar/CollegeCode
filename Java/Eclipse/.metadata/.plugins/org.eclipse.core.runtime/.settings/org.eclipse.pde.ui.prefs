@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+predarkestdark.editor.color.default=0,0,0
+predarkestdark.editor.color.externalized_string=128,0,128
+predarkestdark.editor.color.header_assignment=0,0,0
+predarkestdark.editor.color.header_attributes=128,128,0
+predarkestdark.editor.color.header_key=128,0,0
+predarkestdark.editor.color.header_osgi=128,0,0
+predarkestdark.editor.color.header_value=0,0,0
+predarkestdark.editor.color.instr=128,128,128
+predarkestdark.editor.color.string=0,128,0
+predarkestdark.editor.color.tag=0,0,128
+predarkestdark.editor.color.xml_comment=128,0,0

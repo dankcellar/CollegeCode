@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
+predarkestdark.org.eclipse.ant.ui.verboseColor=209,151,217
+predarkestdark.org.eclipse.ant.ui.warningColor=255,198,0
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true
