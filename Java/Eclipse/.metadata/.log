@@ -650,3 +650,1890 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-03-23 14:43:36.642
 !MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+!SESSION 2017-04-09 15:04:34.705 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.genuitec.eclipse.patches 4 0 2017-04-09 15:04:41.797
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.patches [689]
+  Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.base 4 0 2017-04-09 15:04:41.933
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.base [690]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.scrollbar
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.scrollbar; bundle-version="1.7.2.201702282146"; singleton:="true"
+       com.genuitec.eclipse.theming.scrollbar [696]
+         Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+           -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+              com.genuitec.eclipse.patches [689]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.core 4 0 2017-04-09 15:04:41.938
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.core [692]
+  Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.icon.designer 4 0 2017-04-09 15:04:41.967
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.icon.designer [695]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.core; bundle-version="1.5.0"
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.core; bundle-version="1.7.2.201703072240"; singleton:="true"
+       com.genuitec.eclipse.theming.core [692]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.scrollbar 4 0 2017-04-09 15:04:41.971
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.scrollbar [696]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+    -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+       com.genuitec.eclipse.patches [689]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2017-04-09 15:04:41.975
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.ui [698]
+  Unresolved requirement: Require-Bundle: com.github.eclipsecolortheme; resolution:="optional"
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.scrollbar
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.scrollbar; bundle-version="1.7.2.201702282146"; singleton:="true"
+       com.genuitec.eclipse.theming.scrollbar [696]
+         Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+           -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+              com.genuitec.eclipse.patches [689]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.core
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.core; bundle-version="1.7.2.201703072240"; singleton:="true"
+       com.genuitec.eclipse.theming.core [692]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.ant 4 0 2017-04-09 15:04:41.978
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.ant [831]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ant; bundle-version="[2.8.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.codegen.ecore.ui 4 0 2017-04-09 15:04:41.983
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.codegen.ecore.ui [833]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.codegen.ecore.ui; bundle-version="[2.12.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.uml.ecore.exporter 4 0 2017-04-09 15:04:41.987
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.uml.ecore.exporter [838]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.exporter; bundle-version="[2.7.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:55.553
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:55.559
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:55.567
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:55.572
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:55.591
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:55.597
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.585
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.590
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.597
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.602
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.606
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.609
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.678
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.682
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.689
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.693
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.698
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.702
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.707
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.710
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.715
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.719
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.727
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.731
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.736
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.739
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.883
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:58.887
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:59.184
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 15:04:59.189
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-09 15:04:59.369
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Command Center'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-04-09 20:57:49.470 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.genuitec.eclipse.patches 4 0 2017-04-09 20:57:50.644
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.patches [689]
+  Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.base 4 0 2017-04-09 20:57:50.737
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.base [690]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.scrollbar
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.scrollbar; bundle-version="1.7.2.201702282146"; singleton:="true"
+       com.genuitec.eclipse.theming.scrollbar [696]
+         Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+           -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+              com.genuitec.eclipse.patches [689]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.core 4 0 2017-04-09 20:57:50.752
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.core [692]
+  Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.icon.designer 4 0 2017-04-09 20:57:50.763
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.icon.designer [695]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.core; bundle-version="1.5.0"
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.core; bundle-version="1.7.2.201703072240"; singleton:="true"
+       com.genuitec.eclipse.theming.core [692]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.scrollbar 4 0 2017-04-09 20:57:50.770
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.scrollbar [696]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+    -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+       com.genuitec.eclipse.patches [689]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2017-04-09 20:57:50.777
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.ui [698]
+  Unresolved requirement: Require-Bundle: com.github.eclipsecolortheme; resolution:="optional"
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.core
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.core; bundle-version="1.7.2.201703072240"; singleton:="true"
+       com.genuitec.eclipse.theming.core [692]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.scrollbar
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.scrollbar; bundle-version="1.7.2.201702282146"; singleton:="true"
+       com.genuitec.eclipse.theming.scrollbar [696]
+         Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+           -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+              com.genuitec.eclipse.patches [689]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.ant 4 0 2017-04-09 20:57:50.792
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.ant [831]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ant; bundle-version="[2.8.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.codegen.ecore.ui 4 0 2017-04-09 20:57:50.799
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.codegen.ecore.ui [833]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.codegen.ecore.ui; bundle-version="[2.12.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.uml.ecore.exporter 4 0 2017-04-09 20:57:50.807
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.uml.ecore.exporter [838]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.exporter; bundle-version="[2.7.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:11.431
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:11.438
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:11.446
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:11.454
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:11.483
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:11.489
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.450
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.456
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.465
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.470
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.475
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.480
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.568
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.572
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.581
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.588
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.594
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.598
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.603
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.607
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.613
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.618
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.628
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.634
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.639
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.643
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.846
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:14.852
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:15.387
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 20:58:15.392
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-09 20:58:15.703
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Command Center'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:44.916
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:44.923
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:46.197
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:46.202
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:46.216
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:46.221
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:47.757
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:47.762
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:49.074
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:49.081
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:49.095
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:49.100
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:49.751
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:49.756
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:51.125
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:51.131
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:51.148
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:51.154
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:55.074
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:55.079
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:55.087
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:03:55.092
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:03.322
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:03.328
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:03.434
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:03.438
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 2 0 2017-04-09 21:04:12.886
+!MESSAGE Error parsing metadata repository
+!SUBENTRY 1 org.eclipse.equinox.p2.core 2 0 2017-04-09 21:04:12.886
+!MESSAGE Error in file:/C:/Users/Command Center/.p2/org.eclipse.equinox.p2.repository/cache/content1274035358.jar at line 59048, column 62: Missing required attribute in "property": value
+
+!ENTRY org.eclipse.amalgam.discovery.ui 4 0 2017-04-09 21:04:13.868
+!MESSAGE Problems occurred while performing installation: Operation details
+!STACK 0
+java.lang.RuntimeException: Operation details
+	at org.eclipse.amalgam.discovery.ui.common.internal.PrepareInstallProfileJob.resolve(PrepareInstallProfileJob.java:143)
+	at org.eclipse.amalgam.discovery.ui.common.internal.PrepareInstallProfileJob.run(PrepareInstallProfileJob.java:104)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:18.121
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:18.130
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:18.145
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:18.150
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:33.212
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:33.217
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:43.015
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:43.019
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:43.033
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:43.038
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:43.155
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:43.164
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:48.962
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:04:48.966
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:05:41.474
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:05:41.479
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:05:41.490
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-09 21:05:41.495
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+!SESSION 2017-04-10 17:39:23.931 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.genuitec.eclipse.patches 4 0 2017-04-10 17:39:24.799
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.patches [689]
+  Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.base 4 0 2017-04-10 17:39:24.847
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.base [690]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.scrollbar
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.scrollbar; bundle-version="1.7.2.201702282146"; singleton:="true"
+       com.genuitec.eclipse.theming.scrollbar [696]
+         Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+           -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+              com.genuitec.eclipse.patches [689]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.core 4 0 2017-04-10 17:39:24.852
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.core [692]
+  Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.icon.designer 4 0 2017-04-10 17:39:24.857
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.icon.designer [695]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.core; bundle-version="1.5.0"
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.core; bundle-version="1.7.2.201703072240"; singleton:="true"
+       com.genuitec.eclipse.theming.core [692]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.scrollbar 4 0 2017-04-10 17:39:24.861
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.scrollbar [696]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+    -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+       com.genuitec.eclipse.patches [689]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2017-04-10 17:39:24.865
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.ui [698]
+  Unresolved requirement: Require-Bundle: com.github.eclipsecolortheme; resolution:="optional"
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.core
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.core; bundle-version="1.7.2.201703072240"; singleton:="true"
+       com.genuitec.eclipse.theming.core [692]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.scrollbar
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.scrollbar; bundle-version="1.7.2.201702282146"; singleton:="true"
+       com.genuitec.eclipse.theming.scrollbar [696]
+         Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+           -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+              com.genuitec.eclipse.patches [689]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.ant 4 0 2017-04-10 17:39:24.870
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.ant [831]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ant; bundle-version="[2.8.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.codegen.ecore.ui 4 0 2017-04-10 17:39:24.874
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.codegen.ecore.ui [833]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.codegen.ecore.ui; bundle-version="[2.12.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.uml.ecore.exporter 4 0 2017-04-10 17:39:24.878
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.uml.ecore.exporter [838]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.exporter; bundle-version="[2.7.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:30.828
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:30.835
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:30.842
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:30.847
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:30.867
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:30.872
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:32.964
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:32.969
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:32.975
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:32.979
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:32.984
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:32.987
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.046
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.050
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.057
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.061
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.066
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.070
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.075
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.079
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.084
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.088
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.094
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.097
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.102
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.105
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.235
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.239
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.554
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 17:39:33.558
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-10 17:39:33.770
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Command Center'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-04-10 19:34:47.892 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.genuitec.eclipse.patches 4 0 2017-04-10 19:34:48.745
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.patches [689]
+  Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.base 4 0 2017-04-10 19:34:48.791
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.base [690]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.scrollbar
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.scrollbar; bundle-version="1.7.2.201702282146"; singleton:="true"
+       com.genuitec.eclipse.theming.scrollbar [696]
+         Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+           -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+              com.genuitec.eclipse.patches [689]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.core 4 0 2017-04-10 19:34:48.796
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.core [692]
+  Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.icon.designer 4 0 2017-04-10 19:34:48.801
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.icon.designer [695]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.core; bundle-version="1.5.0"
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.core; bundle-version="1.7.2.201703072240"; singleton:="true"
+       com.genuitec.eclipse.theming.core [692]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.scrollbar 4 0 2017-04-10 19:34:48.805
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.scrollbar [696]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+    -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+       com.genuitec.eclipse.patches [689]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2017-04-10 19:34:48.809
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.ui [698]
+  Unresolved requirement: Require-Bundle: com.github.eclipsecolortheme; resolution:="optional"
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.core
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.core; bundle-version="1.7.2.201703072240"; singleton:="true"
+       com.genuitec.eclipse.theming.core [692]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.scrollbar
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.scrollbar; bundle-version="1.7.2.201702282146"; singleton:="true"
+       com.genuitec.eclipse.theming.scrollbar [696]
+         Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+           -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+              com.genuitec.eclipse.patches [689]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.ant 4 0 2017-04-10 19:34:48.815
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.ant [831]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ant; bundle-version="[2.8.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.codegen.ecore.ui 4 0 2017-04-10 19:34:48.819
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.codegen.ecore.ui [833]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.codegen.ecore.ui; bundle-version="[2.12.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.uml.ecore.exporter 4 0 2017-04-10 19:34:48.824
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.uml.ecore.exporter [838]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.exporter; bundle-version="[2.7.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:54.882
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:54.888
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:54.897
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:54.902
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:54.920
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:54.924
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:56.975
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:56.979
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:56.986
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:56.990
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:56.995
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:56.999
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.061
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.066
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.073
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.077
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.082
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.085
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.090
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.093
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.100
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.103
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.109
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.113
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.118
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.122
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.268
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.273
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.673
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:34:57.678
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-10 19:34:57.969
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Command Center'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:35:06.384
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:35:06.388
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:35:06.396
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:35:06.401
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:35:21.516
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:35:21.520
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:37:59.423
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:37:59.427
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:37:59.438
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:37:59.443
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:00.682
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:00.687
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:02.668
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:02.672
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:02.684
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:02.688
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:06.204
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:06.208
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:10.364
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:10.369
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:10.379
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:10.383
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:11.634
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:11.638
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:16.247
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:16.251
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:16.260
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:16.264
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:22.860
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:38:22.864
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:32.421
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:32.463
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:32.473
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:32.477
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:39.545
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:39.552
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:44.436
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:44.441
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:44.453
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:44.458
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:47.177
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:47.182
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:53.728
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:53.735
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:53.748
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:40:53.753
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:03.167
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:03.173
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:12.477
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:12.485
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:12.498
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:12.502
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:12.788
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:12.794
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:13.620
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:13.630
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:13.641
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:13.646
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:13.715
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:13.719
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:18.041
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:18.046
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:18.073
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:18.077
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:18.087
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:18.091
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:22.277
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:41:22.281
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:25.297
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:25.302
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:25.308
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:25.312
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:25.321
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:25.325
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:30.154
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:30.158
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:35.782
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:35.787
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:35.797
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:35.802
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:36.097
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:36.101
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:37.139
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:37.143
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:37.153
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:37.157
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:46.781
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:46.786
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:46.793
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:46.796
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:46.822
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:46.826
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:49.394
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:49.398
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:50.527
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:50.533
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:50.554
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:50.559
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:53.620
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:53.624
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:53.648
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:53.652
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:53.662
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:42:53.666
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:09.665
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:09.669
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:29.519
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:29.524
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:30.109
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:30.113
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:30.126
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:30.131
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:30.137
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:30.141
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:30.186
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:30.191
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:30.218
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:30.223
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:40.301
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:40.306
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:40.329
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:40.333
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:40.344
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 19:43:40.349
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+!SESSION 2017-04-10 20:23:29.211 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY com.genuitec.eclipse.patches 4 0 2017-04-10 20:23:30.510
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.patches [689]
+  Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.base 4 0 2017-04-10 20:23:30.635
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.base [690]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.scrollbar
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.scrollbar; bundle-version="1.7.2.201702282146"; singleton:="true"
+       com.genuitec.eclipse.theming.scrollbar [696]
+         Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+           -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+              com.genuitec.eclipse.patches [689]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.core 4 0 2017-04-10 20:23:30.640
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.core [692]
+  Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.icon.designer 4 0 2017-04-10 20:23:30.644
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.icon.designer [695]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.core; bundle-version="1.5.0"
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.core; bundle-version="1.7.2.201703072240"; singleton:="true"
+       com.genuitec.eclipse.theming.core [692]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.scrollbar 4 0 2017-04-10 20:23:30.650
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.scrollbar [696]
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+    -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+       com.genuitec.eclipse.patches [689]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY com.genuitec.eclipse.theming.ui 4 0 2017-04-10 20:23:30.655
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: com.genuitec.eclipse.theming.ui [698]
+  Unresolved requirement: Require-Bundle: com.github.eclipsecolortheme; resolution:="optional"
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.core
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.core; bundle-version="1.7.2.201703072240"; singleton:="true"
+       com.genuitec.eclipse.theming.core [692]
+         Unresolved requirement: Import-Package: org.objectweb.asm; version="[5.0.1,5.1.0)"
+  Unresolved requirement: Require-Bundle: com.genuitec.eclipse.theming.scrollbar
+    -> Bundle-SymbolicName: com.genuitec.eclipse.theming.scrollbar; bundle-version="1.7.2.201702282146"; singleton:="true"
+       com.genuitec.eclipse.theming.scrollbar [696]
+         Unresolved requirement: Require-Bundle: com.genuitec.eclipse.patches
+           -> Bundle-SymbolicName: com.genuitec.eclipse.patches; bundle-version="1.7.2.201702281648"; singleton:="true"
+              com.genuitec.eclipse.patches [689]
+                Unresolved requirement: Import-Package: org.objectweb.asm; version="5.0.1"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.ant 4 0 2017-04-10 20:23:30.660
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.ant [831]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.ant; bundle-version="[2.8.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.codegen.ecore.ui 4 0 2017-04-10 20:23:30.666
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.codegen.ecore.ui [833]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.codegen.ecore.ui; bundle-version="[2.12.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.uml2.uml.ecore.exporter 4 0 2017-04-10 20:23:30.672
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.uml2.uml.ecore.exporter [838]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.exporter; bundle-version="[2.7.0,3.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1599)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:40.764
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:40.771
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:40.779
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:40.784
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:40.803
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:40.807
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.750
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.758
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.765
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.770
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.775
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.780
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.866
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.870
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.877
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.882
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.888
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:45.892
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.033
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.038
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.058
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.063
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.071
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.075
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.080
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.084
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.342
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.347
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.983
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:47.988
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:48.013
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:48.017
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-04-10 20:23:48.294
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Command Center'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:48.999
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:49.049
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:49.061
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:49.067
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:53.347
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:53.390
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:53.405
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:53.414
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:53.474
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:53.481
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:54.749
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:54.754
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:54.783
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:54.788
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:54.801
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:23:54.805
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:24:01.570
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
+
+!ENTRY org.eclipse.e4.ui.css.swt 4 0 2017-04-10 20:24:01.575
+!MESSAGE Failed to get bundle for: bundleclass://com.genuitec.eclipse.theming.ui/com.genuitec.eclipse.theming.ui.rendering.SquareTabRenderer
